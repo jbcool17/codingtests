@@ -1,4 +1,4 @@
-# Move an array LEFT
+# Move an array LEFT, how many times
 # remove puts when ready
 
 def left(arr, i) 
