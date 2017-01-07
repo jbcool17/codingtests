@@ -5,3 +5,16 @@ myArray.join('').split(',').join('').split('').map(function(a){ return parseInt(
 
 // concat / apply
 var myNewArray = [].concat.apply([], myArray);
+
+// reduce
+var myNewArray = myArray.reduce(function(prev, curr) {
+  return prev.concat(curr);
+});
+
+// For Loop
+var myNewArray = [];
+for (var i = 0; i < myArray.length; ++i) {
+  for (var j = 0; j < myArray[i].length; ++j)
+    myNewArray.push(myArray[i][j]);
+}
+console.log(myNewArray);
